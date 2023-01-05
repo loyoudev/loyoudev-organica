@@ -99,6 +99,7 @@ Ionicon
 --shadow-1: 0 12px 25px -8px hsla(0, 0%, 0%, 0.2);
 --shadow-2: -12px 0 25px -8px hsla(0, 0%, 0%, 0.2);
 --shadow-3: 12px 0 25px -8px hsla(0, 0%, 0%, 0.2);
+--shadow-3: 12px 0 25px -8px hsl(0, 0%, 82%);
 ```
 
 ## Transition

@@ -151,7 +151,7 @@ NAVEGACION
   max-width: 300px;
   width: 100%;
   min-height: 100%;
-  padding: 24px 13px 30px;
+  padding: 24px 13px 25px;
   box-shadow: var(--shadow-3);
   z-index: 2;
   visibility: hidden;
@@ -191,14 +191,14 @@ NAVEGACION
 .nav-close-btn:is(:hover, :focus) { color: var(--white);}
 
 .navbar-list{
-  padding: 20px 0;
+  padding: 20px 0px 0px;
 }
 
 .navbar-link {
   color: var(--white);
   font-size: var(--fs-6);
   font-weight: var(--fw-700);
-  padding: 17px;
+  padding: 15px;
   border-radius: var(--radius-4);
 }
 
@@ -214,6 +214,64 @@ NAVEGACION
  border-top: 1px solid var(--battleship-gray);
 }
 
+/*MONEDAS*/
+.menu-category {
+  color: var(--white);
+  margin-bottom:10px;
+}
+
+
+.accordion-menu {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--white);
+  padding: 15px;
+  border-radius: var(--radius-4)
+}
+
+.accordion-menu:is(:hover, :focus) {background-color: var(--white_10);}
+
+.accordion-menu.active .add-icon,
+.accordion-menu .remove-icon { display: none; }
+
+.accordion-menu .add-icon,
+.accordion-menu.active .remove-icon { display: block; }
+
+.menu-category .submenu-category-list {margin: 0px 10px 0;}
+
+.submenu-title {
+  padding: 1px 0;
+  font-size: var(--fs-6);
+  color: var(--light-gray);
+  font-weight: var(--fw-400);
+  border: 1px solid var(--green-pigment);
+  border-radius: var(--radius-4);
+}
+
+.submenu-title:hover { 
+  color: var(--yellow-orange);
+  border-radius: var(--radius-4);
+}
+
+
+.submenu-category-list {
+  max-height: 0;
+  overflow: hidden;
+  visibility: hidden;
+  transition: 0.5s ease-in-out;
+}
+
+
+.submenu-category-list.active {
+  max-height: 148px;
+  visibility: visible;
+}
+
+.accordion-menu.active .caret-back { transform: rotate(-0.25turn); }
+
+/*LOGOS SOCIAL*/
 .navbar-social-container {
   display: flex;
   justify-content: center;
@@ -233,5 +291,5 @@ NAVEGACION
 
 /*pasas el mouse muestra otro color de borde */
 .social-link:is(:hover, :focus):not(:focus-visible) {
-  outline: 2px solid var(--emerald);
+  outline: 4px solid var(--emerald);
 }
