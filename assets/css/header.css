@@ -1,0 +1,237 @@
+/*-----------------------------------*\
+  #HEADER
+\*-----------------------------------*/
+.top-bar {
+  background-color: var(--gunmetal-2);
+  color: var(--emerald);
+  font-size: var(--fs-7);
+  font-weight: var(--fw-500);
+  text-align: center;
+  padding-block: 10px;
+}
+
+
+/*
+  LOGO
+*/
+.logo {
+  color: var(--gunmetal-2);
+  font-family: var(--f-playfair-display);
+  font-size: 3rem;
+}
+
+.logo .span {
+  display: inline-block;
+  color: var(--emerald);
+}
+
+.nav-wrapper .logo { text-align: center;}
+
+/*
+NAVEGACION
+*/
+.nav-wrapper .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  row-gap: 20px;
+  padding-inline: 10%;
+  padding-block: 20px;
+}
+
+.nav-wrapper .h1 { min-width: 100%;}
+
+.header-action {
+  display: flex;
+  min-width: 70%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-open-btn {
+  background-color: var(--emerald);
+  color: var(--white);
+  font-size: 2.8rem;
+  padding: 6px;
+  border-radius: var(--radius-4);
+  transition: var(--transition-1);
+}
+
+/*pasas el mouse muestra otro color*/
+.nav-open-btn:is(:hover, :focus) { background-color: var(--green-pigment);}
+
+.header-action-btn {
+  position: relative;
+  background-color: var(--mint-cream);
+  color: var(--space-cadet);
+  font-size: 2rem;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+/*pasas el mouse muestra otro color de borde */
+.header-action-btn:is(:hover, :focus):not(:focus-visible) {
+  outline: 2px solid var(--emerald);
+}
+
+/*el circulo de me gusta y compras*/
+.btn-badge {
+  position: absolute;
+  background-color: var(--emerald);
+  color: var(--white);
+  font-size: var(--fs-9);
+  font-weight: var(--fw-600);
+  padding: 3px 7px;
+  border-radius: 50px;
+  top: -5px;
+  right: -5px;
+}
+
+/*el buscador*/
+.search-wrapper { position: relative;}
+
+.search-wrapper.active .search-icon,
+.search-wrapper .close-icon { display: none;}
+
+.search-wrapper .search-icon,
+.search-wrapper.active .close-icon { display: block;}
+
+.input-wrapper {
+  position: absolute;
+  background-color: var(--white);
+  top: calc(100% + 25px);
+  left: 0;
+  width: 260px;
+  transform: translateX(var(--translateX, -85px)) scale(var(--scale, 0.5));
+  box-shadow: var(--shadow-1);
+  padding: 20px;
+  border-radius: var(--radius-4);
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.15s var(--cubic-in);
+}
+
+.search-wrapper.active .input-wrapper {
+  visibility: visible;
+  opacity: 1;
+  --scale: 1;
+  transition: 0.35s var(--cubic-out);
+}
+
+.search-input {
+  color: var(--eerie-black);
+  font-size: var(--fs-6);
+  border: 1px solid var(--platinum);
+  padding: 15px;
+  padding-inline-end: 40px;
+  outline: none;
+}
+
+.search-input::-webkit-search-cancel-button {display: none;}
+
+.search-input:focus {border-color: var(--emerald);}
+
+.search-submit {
+  color: var(--space-cadet);
+  font-size: 2rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 33px;
+}
+
+
+/*NAVBAR*/ 
+.navbar {
+  background-color: var(--gunmetal-1);
+  position: fixed;
+  top: 0;
+  left: -300px;
+  max-width: 300px;
+  width: 100%;
+  min-height: 100%;
+  padding: 24px 13px 30px;
+  box-shadow: var(--shadow-3);
+  z-index: 2;
+  visibility: hidden;
+  transition: 0.25s var(--cubic-in);
+}
+
+.navbar.active {
+  transform: translateX(300px);
+  visibility: visible;
+  transition: 0.5s var(--cubic-out);
+}
+
+.navbar-top{
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo-nav {
+  color: var(--white);
+  font-family: var(--f-playfair-display);
+  font-size: 3rem;
+}
+
+.logo-nav .span {
+  display: inline-block;
+  color: var(--emerald);
+}
+
+.nav-close-btn {
+  color: var(--white_50);
+  font-size: 2.8rem;
+  border: 1px solid;
+  padding: 5px;
+  transition: var(--transition-1);
+}
+
+.nav-close-btn:is(:hover, :focus) { color: var(--white);}
+
+.navbar-list{
+  padding: 20px 0;
+}
+
+.navbar-link {
+  color: var(--white);
+  font-size: var(--fs-6);
+  font-weight: var(--fw-700);
+  padding: 17px;
+  border-radius: var(--radius-4);
+}
+
+/*pasas el mouse muestra otro color de fondo */
+.navbar-link:is(:hover, :focus) {background-color: var(--white_10);}
+
+/*pasas el mouse muestra otro color de borde */
+.navbar-link:is(:hover, :focus):not(:focus-visible) {
+  outline: 2px solid var(--emerald);
+}
+
+.navbar-bottom {
+ border-top: 1px solid var(--battleship-gray);
+}
+
+.navbar-social-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  
+}
+
+.navbar-social-container .social-link {
+  background-color: var(--cultured);
+  color: var(--serie-black);
+  font-size: 20px;
+  padding: 10px;
+  border-radius: var(--radius-10);
+}
+
+
+/*pasas el mouse muestra otro color de borde */
+.social-link:is(:hover, :focus):not(:focus-visible) {
+  outline: 2px solid var(--emerald);
+}

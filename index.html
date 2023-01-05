@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loyoudev - Frutas y Vegetales de Calidad</title>
+
+
+    <!--
+      favicon
+    -->
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+    <!--
+      custom css link
+    -->
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/reusedstyle.css">
+    <link rel="stylesheet" href="./assets/css/home.css">
+    
+
+    <!--
+      google font link
+    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link 
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
+
+</head>
+<body>
+    
+
+
+
+
+<!--
+    MODAL
+  
+  <div class="modal">
+    <button class="modal-close-btn">
+      <ion-icon name="close-outline"></ion-icon>
+    </button>
+
+    <div class="modal-banner">
+      <img src="./assets/images/modal.jpg" alt="Descuento con CMR visa">
+    </div>
+  </div>
+-->
+
+<!--
+   HEADER
+ -->
+  <header class="header" data-header>
+
+    <div class="top-bar">
+      <div class="container">
+        <p>Envío gratis para pedidos mayor a $100</p>
+      </div>
+    </div>
+
+    <div class="nav-wrapper">
+        <div class="container">
+          <h1 class="h1">
+            <a href="./index.html" class="logo">Loyou<span class="span">dev</span></a>
+          </h1>
+
+          <button class="nav-open-btn" aria-label="Open Menu" data-nav-opem-btn>
+            <ion-icon name="menu-outline"></ion-icon>
+          </button>
+
+          <nav class="navbar active" data-navbar>
+
+              <div class="navbar-top">
+                <h2 class="logo-nav">Loyou<span class="span">dev</span></h2>
+
+                <button class="nav-close-btn" aria-label="Close Menu" data-nav-close-btn>
+                  <ion-icon name="close-outline"></ion-icon>
+                </button>
+              </div>
+              
+
+              <ul class="navbar-list">
+                <li><a href="./index.html" class="navbar-link">Home</a></li>
+            
+                <li><a href="./" class="navbar-link">Sobre Nosotros</a></li>
+        
+                <li><a href="./" class="navbar-link">Categorías</a></li>
+      
+                <li><a href="./" class="navbar-link">Mi carrito</a></li>
+
+                <li><a href="./" class="navbar-link">Me gusta</a></li>
+
+                <li><a href="./" class="navbar-link">Contacto</a></li>
+              </ul>
+
+              <div class="navbar-bottom">
+                  <ul class="navbar-monedas-container">
+                    <li class="menu-category">
+                      <button class="accordion-menu">
+                          <p class="menu-title">Monedas</p>
+
+                          <ion-icon name="caret-back-outline" class="caret-back"></ion-icon>
+                      </button>
+
+                      <ul class="submenu-category-list">
+                          <li class="submenu-category">
+                            <a href="#" class="submenu-title">PEN S&sol;</a>
+                          </li>
+
+                          <li class="submenu-category">
+                            <a href="#" class="submenu-title">USD &dollar;</a>
+                          </li>
+
+                          <li class="submenu-category">
+                              <a href="#" class="submenu-title">EUR &euro;</a>
+                          </li>
+                      </ul>
+
+                    </li>
+                  </ul>
+
+                  <ul class="navbar-social-container">
+                    <li>
+                        <a href="https://github.com/loyoudev" class="social-link" target="_blank">
+                            <ion-icon name="logo-github"></ion-icon>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.linkedin.com/in/loyoudev/" class="social-link"  target="_blank">
+                            <ion-icon name="logo-linkedin"></ion-icon>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://z-p15.www.instagram.com/loyuodev/" class="social-link"  target="_blank">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.youtube.com/channel/UCh1dMgYYYCE8yDpZvIQasuQ" class="social-link"  target="_blank">
+                            <ion-icon name="logo-youtube"></ion-icon>
+                        </a>
+                    </li>
+                  </ul>
+              </div>
+
+          </nav>
+
+          <div class="header-action">
+            <div class="search-wrapper" data-search-wrapper>
+               <button class="header-action-btn" aria-label="Toggle search" data-search-btn>      
+                  <ion-icon name="search-outline" class="search-icon"></ion-icon>
+                  <ion-icon name="close-outline" class="close-icon"></ion-icon>
+               </button>
+
+               <div class="input-wrapper">
+                  <input type="search" name="search" placeholder="Buscar aquí" class="search-input">
+
+                  <button class="search-submit" aria-label="Submit search">
+                    <ion-icon name="search-outline"></ion-icon>
+                  </button>
+               </div>
+
+            </div>
+
+            <button class="header-action-btn" aria-label="Open whishlist" data-panel-btn="whishlist">
+              <ion-icon name="heart-outline"></ion-icon>
+
+              <data class="btn-badge" value="3">03</data>
+            </button>
+
+            <button class="header-action-btn" aria-label="Open shopping cart" data-panel-btn="cart">
+              <ion-icon name="basket-outline"></ion-icon>
+
+              <data class="btn-badge" value="2">02</data>
+            </button>
+          </div>
+        </div>
+    </div>
+    
+  </header>
+
+
+
+
+
+
+
+  <!---->
+
+
+
+
+
+
+
+
+
+    <!--
+      custom  js link
+    -->
+    <script src="./assets/js/script.js"></script>
+
+    <!--
+      ionicon link
+    -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>
