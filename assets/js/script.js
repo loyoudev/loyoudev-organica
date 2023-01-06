@@ -12,6 +12,16 @@ for(let i = 0; i < navElems.length; i++) {
     });
 }
 
+// search toggle
+
+const searchContainer = document.querySelector("[data-search-wrapper]");
+const searchBtn = document.querySelector("[data-search-btn]");
+
+searchBtn.addEventListener("click", function () {
+  searchContainer.classList.toggle("active");
+});
+
+
 // accordion variables
 const accordionBtn = document.querySelectorAll('[data-accordion-btn]');
 const accordion = document.querySelectorAll('[data-accordion]');
