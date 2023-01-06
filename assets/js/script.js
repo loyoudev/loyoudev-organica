@@ -1,4 +1,15 @@
 'use stict';
+
+// modal
+const notificationModal = document.querySelector('[data-modal]');
+const modalCloseBtn = document.querySelector('[data-modal-close]')
+
+modalCloseBtn.addEventListener('click', function () {
+  notificationModal.classList.add('closed');
+})
+
+
+
 // navbar taggle
 const navOpenBtn = document.querySelector("[data-nav-open-btn]");
 const navbar = document.querySelector("[data-navbar]");

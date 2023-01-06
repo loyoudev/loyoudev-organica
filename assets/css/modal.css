@@ -1,0 +1,59 @@
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: hsla(0, 0%, 0%, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  z-index: 10;
+  animation: popup 1s ease-in-out .2s forwards;
+}
+
+@keyframes popup {
+
+  0% {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+
+  100% {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+  }
+
+}
+
+.modal-banner img {
+    height: 350px;
+    margin: 100px auto;
+}
+
+.modal.closed { display: none;}
+
+.modal-content {
+    position: relative;
+    max-width: 350px;
+    overflow: hidden;
+    z-index: 2;
+    animation: scaleUp 0.5s ease-in-out 5s forwards;
+}
+
+.modal-close-btn {
+    position: absolute;
+    top: 100px;
+    right: 20px;
+    background-color: var(--shamrock-green);
+    color: var(--white);
+    font-size: 30px;
+    border-radius:6px 0 6px 6px;
+}
+
+.modal-close-btn:hover { opacity: 0.9; }
+
+.modal-close-btn ion-icon { --ionicon-stroke-width: 50px; }
