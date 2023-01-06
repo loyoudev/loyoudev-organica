@@ -62,3 +62,41 @@
   font-size: var(--fs-8);
 }
 
+.panel-item .item-close-btn {
+  margin-inline-start: auto;
+  color: var(--onyx);
+  font-size: 2.5rem;
+}
+
+.panel-item .item-close-btn ion-icon { --ionicon-stroke-width: 25px;}
+
+.side-panel .subtotal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-block-end: 30px;
+}
+
+.side-panel .subtotal-text {
+  color: var(--russian-violet);
+  font-weight: var(--fw-700); 
+}
+
+.side-panel .subtotal-value {
+  color: var(--emerald);
+  font-size: var(--fs-3);
+  font-weight: var(--fw-700);
+}
+
+.panel-btn {
+  background-color: var(--emerald);
+  color: var(--white);
+  font-size: var(--fs-7);
+  text-align: center;
+  padding: 20px 15px;
+  border-radius: var(--radius-6);
+  transition: var(--transition-1);
+  font-weight: var(--fw-700);
+}
+
+.panel-btn:is(:hover, :focus) { background-color: var(--green-pigment);}
