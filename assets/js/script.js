@@ -13,13 +13,34 @@ for(let i = 0; i < navElems.length; i++) {
 }
 
 // search toggle
-
 const searchContainer = document.querySelector("[data-search-wrapper]");
 const searchBtn = document.querySelector("[data-search-btn]");
 
 searchBtn.addEventListener("click", function () {
   searchContainer.classList.toggle("active");
 });
+
+
+
+// ASIDE WHISHLIST Y CART TOGGLE
+const panelBtns = document.querySelectorAll("[data-panel-btn]");
+const sidePanels = document.querySelectorAll("[data-side-panel]");
+
+for(let i = 0; i < panelBtns.length; i++) {
+  panelBtns[i].addEventListener("click", function () {
+    let clickElementDataValue = this.dataset.panelBtn;
+
+    for(let i = 0; i < sidePanels.length; i++) {
+      if (clickElementDataValue === sidePanels[i].dataset.sidePanel) {
+        sidePanels[i].classList.toggle("active");        
+      } else {
+        sidePanels[i].classList.remove("active")
+      }
+    }
+  });
+}
+
+
 
 
 // accordion variables

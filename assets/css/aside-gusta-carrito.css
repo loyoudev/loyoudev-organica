@@ -1,0 +1,64 @@
+/*-----------------------------------*\
+  #ASIDE ME GUSTA Y CARRITO
+\*-----------------------------------*/
+.side-panel {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: var(--white);
+  max-width: 300px;
+  width: 100%;
+  height: 100%;
+  padding: 100px 20px 25px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: var(--shadow-2);
+  z-index: 6;
+  visibility: hidden;
+  transition: 0.25s var(--cubic-in);
+}
+
+.side-panel.active {
+  visibility: visible;
+  transform: rotateX(-300px);
+  transition: 0.5s var(--cubic-out);
+}
+
+.panel-close-btn {
+  position: absolute;
+  top: 20px;
+  right: 15px;
+  background-color: var(--jet);
+  color: var(--white);
+  font-size: 2.6rem;
+  padding: 7px;
+  border-radius: var(--radius-4);
+}
+
+/*con esto manda abajo al boton subtotal*/
+.panel-list { margin-block-end: auto;}
+
+.panel-item:not(:last-child) {
+  padding-block-end: 20px;
+  border-block-end: 2px solid var(--cultured);
+  margin-block-end: 20px;
+}
+
+.panel-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.panel-item .item-title {
+  color: var(--russian-violet);
+  font-size: var(--fs-7);
+  font-weight: var(--fw-700);
+  margin-block-end: 6px;
+}
+
+.panel-item .item-value {
+  color: var(--battleship-gray);
+  font-size: var(--fs-8);
+}
+
