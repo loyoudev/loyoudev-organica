@@ -23,6 +23,12 @@
 
 .section { padding-block: var(--section-padding);}
 
+.h2 {
+  font-size: var(--fs-1);
+  font-weight: var(--fw-500);
+  color: var(--russian-violet);
+}
+
 .h3 {
   font-family: var(--ff-playfair-display);
   font-size: var(--fs-4);
@@ -47,3 +53,15 @@
 }
 
 .has-scrollbar:hover::-webkit-scrollbar-thumb { background-color: var(--black_25);}
+
+/*product subtitle*/
+.section-subtitle {
+  color: var(--emerald);
+  font-family: var(--ff-playfair-display);
+  font-size: var(--fs-3);
+  font-style: italic;
+  margin-block-end: 10px;
+}
+
+.section-subtitle,
+.section-title { text-align: center;}
