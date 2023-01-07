@@ -2,3 +2,121 @@
   #MAIN
 \*-----------------------------------*/
 
+
+
+/*-----------------------------------*\
+  #HERO
+\*-----------------------------------*/
+.hero-banner { display: none;}
+
+.hero {
+  background-image: url(../images/hero-left-bg.png);
+  background-color: var(--mint-cream);
+  background-position: bottom left;
+  padding-block: 80px; /*espacio top bottom*/
+}
+
+.hero-subtitle {
+  color: var(--emerald);
+  font-family: var(--ff-playfair-display);
+  font-weight: var(--fw-700);
+  font-style: oblique;
+  letter-spacing: 2px;
+  margin-block-end: 30px;
+}
+
+.hero-title {
+  color: var(--gunmetal-2);
+  font-size: var(--fs-1);
+  margin-block-end: 15px;
+}
+
+.hero-title .span {
+  display: inline-block;
+  color: var(--emerald);
+  font-family: var(--ff-playfair-display);
+  font-weight: var(--fw-700);
+}
+
+.hero-text {
+  color: var(--roman-silver);
+  font-size: var(--fs-4);
+  line-height: 1.8;
+  margin-block-end: 30px;
+}
+
+
+/*-----------------------------------*\
+  #SERVICE
+\*-----------------------------------*/
+.service {
+  background-image: url(../images/partner-left-bg.png);
+  background-color: var(--shamrock-green);
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-blend-mode: soft-light;
+}
+
+.service-list {
+  display: grid;
+  gap: 15px;
+}
+
+.item-icon {
+  background-color: var(--white_25);
+  max-width: max-content;
+  padding: 20px;
+  border-radius: 50% ;
+}
+
+.service-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.item-title { color: var(--white);}
+
+
+/*-----------------------------------*\
+  #OFFERS
+\*-----------------------------------*/
+.offers-item {
+  min-width: 100%;
+  margin-inline: 15px;
+  scroll-snap-align: start;
+}
+
+.offers-card {
+  background-color: var(--mint-cream);
+  padding: 30px 10px;
+  text-align: center;
+}
+
+.offers-card .card-banner { margin-block-end: 20px;}
+
+.offers-card .card-banner img {
+  max-width: max-content;
+  margin-inline: auto;
+}
+
+.offers-card .card-subtitle {
+  color: var(--emerald);
+  font-size: var(--fs-7);
+  font-weight: var(--fw-700);
+  text-transform: uppercase;
+  margin-block-end: 5px;
+}
+
+.offers-card .card-title {
+  color: var(--gunmetal-2);
+  margin-block-end: 12px;
+}
+
+.offers-card .btn {
+  max-width: max-content;
+  margin-inline: auto;
+  --fs: var(--fs-8);
+  --fw: var(--fw-400);
+  --padding: 12px 25px
+}
