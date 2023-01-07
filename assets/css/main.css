@@ -186,3 +186,31 @@
 
 .cta .btn { margin-inline: auto;}
 
+
+/*-----------------------------------*\
+  #TOP PRODUCT
+\*-----------------------------------*/
+.top-product .section-title { margin-block-end: 40px;}
+
+.top-product-card .card-banner { margin-block-end: 40px;}
+
+.top-product-card .product-btn {
+  --padding:8px;
+  --fs: 1.6rem;
+}
+
+.top-product-card .card-content {
+  margin-block-end: -46px;
+  transition: var(--transition-2);
+}
+
+.top-product-card :is(.rating-wrapper, .card-title) { margin-block-end: 12px;}
+
+.top-product-card .rating-wrapper { transition: var(--transition-2);}
+
+.top-product-card .btn,
+.top-product-card:is(:hover, :focus-within) .rating-wrapper {opacity: 0;}
+
+.top-product-card:is(:hover, :focus-within) .card-content {transform: translateY(-41px);}
+
+.top-product-card:is(:hover, :focus-within) .btn { opacity: 1;}
