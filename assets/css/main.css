@@ -124,4 +124,39 @@
 /*-----------------------------------*\
   #PRODUCT
 \*-----------------------------------*/
+.product { padding-block-start: 0;}
 
+.product .section-title { margin-block-end: 40px;}
+
+.filter-list {
+  display: flex;
+  flex-wrap: wrap; /*hace que se reparta en 4*/
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-block-end: 50px;
+}
+
+.filter-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 200px;
+  background-color: var(--mint-cream);
+  color: var(--gunmetal-2);
+  padding: 15px 20px;
+  font-size: var(--fs-5);
+  font-family: var(--ff-playfair-display);
+  font-weight: var(--fw-600);
+}
+
+.filter-btn.active .default,
+.filter-btn .color { display: block;}
+
+.filter-btn .default,
+.filter-btn.active .color { display: none;}
+
+.filter-btn.active {
+  background-color: var(--emerald);
+  color: var(--white);
+}
