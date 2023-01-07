@@ -121,9 +121,7 @@
   --padding: 12px 25px
 }
 
-/*-----------------------------------*\
-  #PRODUCT
-\*-----------------------------------*/
+
 .product { padding-block-start: 0;}
 
 .product .section-title { margin-block-end: 40px;}
@@ -160,3 +158,31 @@
   background-color: var(--emerald);
   color: var(--white);
 }
+
+
+/*-----------------------------------*\
+  #CTA
+\*-----------------------------------*/
+.cta {
+  background-image: url(../images/cta-bg.png);
+  background-color: var(--mint-cream);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.cta .section-title {
+  --fs-1: 2.5rem;
+  margin-block-start: 20px;
+}
+
+.cta-text {
+  color: var(--sonic-silver);
+  font-size: var(--fs-4);
+  margin-block: 15px 30px;
+}
+
+.cta .btn { margin-inline: auto;}
+
