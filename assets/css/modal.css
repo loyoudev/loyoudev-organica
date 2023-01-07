@@ -4,7 +4,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background: hsla(0, 0%, 0%, 0.5);
   opacity: 0;
   visibility: hidden;
@@ -29,25 +29,25 @@
 
 }
 
+.modal-content {
+    position: relative;
+    width: 80vw;
+    max-width: 630px;
+    margin: 40% auto;
+}
+
 .modal-banner img {
-    height: 350px;
-    margin: 100px auto;
+    width: 100%;
 }
 
 .modal.closed { display: none;}
 
-.modal-content {
-    position: relative;
-    max-width: 350px;
-    overflow: hidden;
-    z-index: 2;
-    animation: scaleUp 0.5s ease-in-out 5s forwards;
-}
+
 
 .modal-close-btn {
     position: absolute;
-    top: 100px;
-    right: 20px;
+    top: 0px;
+    right: 0px;
     background-color: var(--shamrock-green);
     color: var(--white);
     font-size: 30px;
