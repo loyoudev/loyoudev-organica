@@ -23,6 +23,8 @@ for(let i = 0; i < navElems.length; i++) {
     });
 }
 
+
+
 // search toggle
 const searchContainer = document.querySelector("[data-search-wrapper]");
 const searchBtn = document.querySelector("[data-search-btn]");
@@ -83,3 +85,13 @@ for (let i = 0; i < accordionBtn.length; i++) {
   });
 
 }
+
+
+// back to top
+
+const backTopBtn = document.querySelector("[data-back-top-btn]")
+
+window.addEventListener("scroll", function () {
+  window.scrollY >= 100 ? backTopBtn.classList.add("active")
+    : backTopBtn.classList.remove("active");
+});

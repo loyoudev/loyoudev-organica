@@ -40,7 +40,34 @@ NAVEGACION
   padding-block: 20px;
 }
 
+/*
+ STICKY NAVEGATION
+*/
+.nav-wrapper {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-block: 0px;
+  z-index: 4;
+}
+
 .nav-wrapper .h1 { min-width: 100%;}
+
+
+.nav-wrapper.active {
+  position: fixed;
+  background-color: var(--white);
+  box-shadow: var(--shadow-1);
+  transform: translateY(-100%);
+  animation: slideIn 0.5s ease forwards;
+}
+
+
+@keyframes slideIn {
+  0% { transform: translateY(-100%); }
+  100% { transform: translateY(0); }
+}
 
 .header-action {
   display: flex;
@@ -156,6 +183,7 @@ NAVEGACION
   z-index: 2;
   visibility: hidden;
   transition: 0.25s var(--cubic-in);
+  height: 100vh;
 }
 
 .navbar.active {

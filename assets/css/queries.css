@@ -1,0 +1,252 @@
+/*-----------------------------------*\
+  #MEDIA QUERIES
+\*-----------------------------------*/
+
+/**
+ * responsive for larger than 480px screen
+ */
+
+ @media (min-width: 480px) {
+
+    /**
+     * HEADER
+     */
+  
+    .nav-wrapper .container { padding-inline: 25px; }
+  
+    .nav-wrapper .h1 {
+      min-width: max-content;
+      order: 2;
+    }
+  
+    .nav-open-btn { order: 1; }
+  
+    .header-action {
+      order: 3;
+      min-width: max-content;
+      gap: 15px;
+    }
+  
+    .input-wrapper { --translateX: -220px; }
+  
+  }
+  
+  
+  
+  
+  
+  /**
+   * responsive for larger than 569px screen
+   */
+  
+  @media (min-width: 569px) {
+  
+    /**
+     * CUSTOM PROPERTY
+     */
+  
+    :root {
+  
+      /**
+       * typography
+       */
+  
+      --fs-1: 3.2rem;
+  
+    }
+  
+  
+    /**
+     * REUSED STYLE
+     */
+  
+    .container {
+      max-width: 520px;
+      margin-inline: auto;
+      position: relative;
+    }
+  
+  
+  
+    /**
+     * HEADER
+     */
+  
+    .nav-wrapper .container { max-width: unset; }
+  
+  }
+  
+  
+  
+  
+  
+  /**
+   * responsive for larger than 768px screen
+   */
+  
+  @media (min-width: 768px) {
+  
+    /**
+     * CUSTOM PROPERTY
+     */
+  
+    :root {
+  
+      /**
+       * typography
+       */
+  
+      --fs-1: 3.8rem;
+  
+    }
+  
+    .service-list{
+     grid-template-columns: repeat(3,1fr);  
+    }
+  
+    /**
+     * REUSED STYLE
+     */
+  
+    .container { max-width: 700px; }
+  
+   
+    /**
+     * FOOTER
+     */
+  
+    .footer-top .container { grid-template-columns: 1fr 1fr; }
+  
+  
+  
+    /**
+     * BREADCUMB
+     */
+  
+    .breadcumb-wrapper { min-height: 400px; }
+  
+    .page-title { --fs-1: 5rem; }
+  
+  }
+  
+  
+  
+  
+  
+  /**
+   * responsive for larger than 992px screen
+   */
+  
+  @media (min-width: 992px) {
+  
+    /**
+     * REUSED STYLE
+     */
+  
+    .container {
+      padding-inline: 40px;
+      max-width: 1020px;
+    }
+  
+  
+  
+    /**
+     * HEADER
+     */
+  
+    .nav-open-btn,
+    .navbar-top { display: none; }
+  
+    .nav-wrapper .container {
+      padding-inline: 10px;
+      max-width: 1040px;
+      padding: 6rem 0 2rem;
+    }
+  
+    .navbar {
+      all: unset;
+      order: 2;
+   
+    }
+  
+    .navbar-link {
+      color: var(--gunmetal-2);
+      padding: 0 5px;
+      --fs-6: 1.6rem;
+    }
+  
+    .navbar-link:is(:hover, :focus) {
+      background-color: unset;
+      color: var(--emerald);
+    }
+  
+    .navbar-list {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 0;
+    }
+  
+    .header-action-btn { padding: 15px; }
+  
+    .navbar-social-container {
+        position: absolute;
+        top: 5px;
+        left: 0;
+    }
+
+    .navbar-monedas-container {
+        display: none;
+    }
+
+    .navbar-bottom {
+      border-top:  none;
+    }
+  
+    /**
+     * FOOTER
+     */
+  
+    .footer-top .container {
+      grid-template-columns: 1.3fr 0.6fr 1fr 1fr;
+      gap: 30px;
+    }
+  
+    .footer-bottom .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    .copyright { margin-block-end: 0; }
+  
+  }
+  
+  .social-list {
+    font-size: 3rem;
+  }
+  
+  
+  
+  
+  /**
+   * responsive for larger than 1200px screen
+   */
+  
+  @media (min-width: 1200px) {
+  
+    /**
+     * REUSED STYLE
+     */
+  
+    .container { max-width: 1200px; }
+  
+  
+  
+    /**
+     * HEADER
+     */
+  
+    .nav-wrapper .container { max-width: 1200px; }
+  
+  }
