@@ -882,7 +882,8 @@
 
   .filter-btn > img { transform: scale(1.5); }
 
-  .product .grid-list { grid-template-columns: repeat(4, 1fr); }
+  .product .grid-list { grid-template-columns: repeat(4, 1fr);
+   }
 
 
 
@@ -898,7 +899,7 @@
    * TOP PRODUCT
    */
 
-  .top-product-list { grid-template-columns: repeat(3, 1fr); }
+  .top-product-list { grid-template-columns: repeat(2, 1fr); }
 
 
 
